@@ -6,11 +6,9 @@ import PageLayout from "./PageLayout";
 const App = () => {
   return (
     <div>
-        <header>Welcome to my website</header>
-        <PageLayout>
+        <PageLayout header={<h1>Welcome to my website</h1>} footer={<p><span>&#169;</span> 2023 My Website. All rights reserved.</p>}>
           <P>This is the content of my website.</P>
         </PageLayout>
-        <footer><span>&#169;</span> 2023 My Website. All rights reserved.</footer>
     </div>
   )
 }
